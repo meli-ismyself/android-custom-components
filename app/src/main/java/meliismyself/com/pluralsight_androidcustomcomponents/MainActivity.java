@@ -12,8 +12,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        VersionView view = new VersionView(this);
-        setContentView(view);
+        setContentView(R.layout.activity_main);
 
     }
 
@@ -27,6 +26,11 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
+    }
+
+    public void CallCustomComponents(){
+        VersionView view = new VersionView(this);
+        setContentView(view);
     }
 }
 

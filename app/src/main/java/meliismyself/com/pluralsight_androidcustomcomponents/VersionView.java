@@ -38,7 +38,7 @@ public class VersionView extends TextView {
         }catch (PackageManager.NameNotFoundException e){
 
         }
-        setBackgroundColor(Color.BLUE);
+        setBackgroundColor(Color.RED);
         //setBackgroundColor(Color.RED);
     }
 }
