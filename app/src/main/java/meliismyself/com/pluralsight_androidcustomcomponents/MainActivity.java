@@ -11,8 +11,13 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
 
+        VersionView view = new VersionView(this);
+        setContentView(view);
+
+    }
+
+    public void setVersionApp(){
         // Show Version in Hello World
         TextView textView = (TextView)findViewById(R.id.tvText);
         try {
@@ -21,5 +26,8 @@ public class MainActivity extends AppCompatActivity {
         }catch (PackageManager.NameNotFoundException e){
             e.printStackTrace();
         }
+
     }
 }
+
+

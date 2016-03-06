@@ -3,6 +3,7 @@ package meliismyself.com.pluralsight_androidcustomcomponents;
 import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
@@ -37,5 +38,7 @@ public class VersionView extends TextView {
         }catch (PackageManager.NameNotFoundException e){
 
         }
+        setBackgroundColor(Color.BLUE);
+        //setBackgroundColor(Color.RED);
     }
 }
